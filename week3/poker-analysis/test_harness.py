@@ -1,4 +1,5 @@
 from hand_rank import HandRank
+from poker_analysis import find_best_hand
 
 
 def get_best_hand(cards):
@@ -19,5 +20,10 @@ def get_best_hand(cards):
         >>> get_best_hand(['KC', 'KS', 'QH', 'TD', '7S', '2C', '3D'])
         (<HandRank.ONE_PAIR: 1>, ['KC', 'KS', 'QH', 'TD', '7S'])
     """
-    # This is not the right code, but it shows the types of the values that should be returned
-    return (HandRank.HIGH_CARD, cards[:5])
+    # Call the main analysis function from poker_analysis.py
+    hand_rank, best_cards = find_best_hand(cards)
+    
+    # Convert the list of Card objects back to a list of strings for the test harness
+    card_strings = [card.card_str for card in best_cards]
+    
+    return hand_rank, card_strings

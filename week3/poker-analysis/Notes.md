@@ -40,5 +40,7 @@ If there were multiple instances, describe whatever you felt was most interestin
 Describe your experiences writing code for the project (with whatever level of help you want from AI)
 
 ## Anything else you'd like to say about this project?
+I feel like using the AI it quickly surpassed my understanding of the project and it was hard to follow after without just submitting to the AI because of performance
 
+The immediate code wasn't that understandable. I had to use another AI (chatgpt) to explain it to me as in my experience it's been the best teacher
 ## Remember to save your chat in chat.md
